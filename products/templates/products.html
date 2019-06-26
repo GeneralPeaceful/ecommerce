@@ -4,7 +4,7 @@
     {% for product in products %}
     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 display panel panel-display">
         <div class="panel-body">
-            <div class="product" style='background-image: url("{{ MEDIA_URL }}{{ product.image }}")'></div>
+            <div class="product" style='background-image: url("https://sebs-ecommerce.s3.eu-west-2.amazonaws.com{{ MEDIA_URL }}{{ product.image }}")'></div>
             <h3>{{ product.name }}</h3>
             <p class="product-description">{{ product.description }}</p>
             <p>{{ product.price }}</p>
